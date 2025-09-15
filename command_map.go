@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func commandMap(cfg *Config) (bool, error) {
+func commandMap(cfg *Config, args ...string) (bool, error) {
 	if cfg.NextLocationAreaURL == nil {
 		return false, errors.New("you've reached the end of the map")
 	}

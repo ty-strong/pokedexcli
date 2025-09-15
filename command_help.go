@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-func commandHelp(cfg *Config) (bool, error) {
+func commandHelp(cfg *Config, args ...string) (bool, error) {
 	fmt.Println()
 	fmt.Println("Welcome to the Pokedex!")
 	fmt.Println("Usage:")
